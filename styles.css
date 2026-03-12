@@ -121,28 +121,31 @@ button:hover {
   color: #166534;
 }
 
-/* Carousel */
-.carousel {
+/* Carousel - hobby images */
+#hobbies .carousel {
   position: relative;
   max-width: 100%;
   margin: 15px 0;
+  min-height: 200px;
 }
 
-.carousel-img {
-  display: none;
+#hobbies .carousel .carousel-img {
+  display: none !important;
   width: 100%;
   height: auto;
   border-radius: 8px;
+  margin: 0;
 }
 
-.carousel-img.active {
-  display: block;
+#hobbies .carousel .carousel-img.active {
+  display: block !important;
 }
 
-.carousel-btn {
+#hobbies .carousel .carousel-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  margin: 0;
   padding: 10px 14px;
   font-size: 1.2rem;
   background: rgba(0, 0, 0, 0.5);
@@ -152,15 +155,15 @@ button:hover {
   cursor: pointer;
 }
 
-.carousel-btn:hover {
+#hobbies .carousel .carousel-btn:hover {
   background: rgba(0, 0, 0, 0.7);
 }
 
-.carousel-prev {
+#hobbies .carousel .carousel-prev {
   left: 8px;
 }
 
-.carousel-next {
+#hobbies .carousel .carousel-next {
   right: 8px;
 }
 
