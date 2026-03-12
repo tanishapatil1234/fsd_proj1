@@ -1,10 +1,4 @@
-/* ============================================
-   Simple Personal Website Styles
-   Each rule targets elements and sets a few
-   properties. Easy to change and understand.
-   ============================================ */
 
-/* Base: body gets a nice font and spacing */
 body {
   font-family: Georgia, serif;
   line-height: 1.6;
@@ -15,7 +9,6 @@ body {
   color: #222;
 }
 
-/* Navigation at the top */
 nav {
   border-bottom: 1px solid #ccc;
   padding-bottom: 10px;
@@ -32,7 +25,6 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Headings */
 h1 {
   font-size: 1.8rem;
   color: #333;
@@ -44,17 +36,14 @@ h2 {
   margin-top: 30px;
 }
 
-/* Sections have space between them */
 section {
   margin-bottom: 40px;
 }
 
-/* Paragraphs are easy to read */
 p {
   margin: 10px 0;
 }
 
-/* Images: not too big, with a little space */
 img {
   max-width: 100%;
   height: auto;
@@ -67,7 +56,6 @@ img.small-img {
   width: 120px;
 }
 
-/* Lists look clean */
 ul {
   margin: 10px 0;
   padding-left: 25px;
@@ -77,7 +65,6 @@ li {
   margin: 8px 0;
 }
 
-/* Links */
 a {
   color: #2563eb;
 }
@@ -86,7 +73,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Form styling: simple and clear */
 form {
   margin-top: 15px;
 }
@@ -129,14 +115,12 @@ button:hover {
   background-color: #555;
 }
 
-/* Message shown after form submit (used by JavaScript) */
 #form-message {
   margin-top: 15px;
   font-weight: bold;
   color: #166534;
 }
 
-/* Footer at the bottom */
 footer {
   margin-top: 50px;
   padding-top: 20px;
