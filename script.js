@@ -1,26 +1,22 @@
-//carousel
+// Carousel
 document.addEventListener('DOMContentLoaded', function () {
-  var carousel = document.querySelector('#hobbies .carousel');
-  if (!carousel) return;
+  var track = document.querySelector('#hobby-carousel .carousel-track');
+  var prevBtn = document.getElementById('carousel-prev');
+  var nextBtn = document.getElementById('carousel-next');
+  if (!track || !prevBtn || !nextBtn) return;
 
-  var carouselImgs = carousel.querySelectorAll('.carousel-img');
-  var prevBtn = carousel.querySelector('.carousel-prev');
-  var nextBtn = carousel.querySelector('.carousel-next');
+  var total = 3;
   var currentIndex = 0;
-  var total = carouselImgs.length;
 
-  function showSlide(index) {
-    if (total === 0) return;
+  function goTo(index) {
     if (index < 0) index = total - 1;
     if (index >= total) index = 0;
     currentIndex = index;
-    for (var i = 0; i < total; i++) {
-      carouselImgs[i].classList.toggle('active', i === currentIndex);
-    }
+    track.style.transform = 'translateX(-' + (currentIndex * 100 / total) + '%)';
   }
 
-  if (prevBtn) prevBtn.addEventListener('click', function () { showSlide(currentIndex - 1); });
-  if (nextBtn) nextBtn.addEventListener('click', function () { showSlide(currentIndex + 1); });
+  prevBtn.onclick = function () { goTo(currentIndex - 1); };
+  nextBtn.onclick = function () { goTo(currentIndex + 1); };
 
 
 

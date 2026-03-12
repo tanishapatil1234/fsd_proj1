@@ -29,12 +29,14 @@
         <li>Field Hockey</li>
         <li>Piano</li>
       </ul>
-      <div class="carousel">
-        <img class="carousel-img active" src="images/fieldhockey.png" alt="Field hockey">
-        <img class="carousel-img" src="images/piano.png" alt="Piano">
-        <img class="carousel-img" src="images/read.png" alt="Reading">
-        <button type="button" class="carousel-btn carousel-prev" aria-label="Previous">&#10094;</button>
-        <button type="button" class="carousel-btn carousel-next" aria-label="Next">&#10095;</button>
+      <div id="hobby-carousel" class="carousel">
+        <div class="carousel-track">
+          <div class="carousel-slide"><img src="images/fieldhockey.png" alt="Field hockey"></div>
+          <div class="carousel-slide"><img src="images/piano.png" alt="Piano"></div>
+          <div class="carousel-slide"><img src="images/read.png" alt="Reading"></div>
+        </div>
+        <button type="button" id="carousel-prev" class="carousel-btn" aria-label="Previous">&#10094;</button>
+        <button type="button" id="carousel-next" class="carousel-btn" aria-label="Next">&#10095;</button>
       </div>
     </section>
 
