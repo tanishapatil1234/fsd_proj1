@@ -121,6 +121,49 @@ button:hover {
   color: #166534;
 }
 
+/* Carousel */
+.carousel {
+  position: relative;
+  max-width: 100%;
+  margin: 15px 0;
+}
+
+.carousel-img {
+  display: none;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.carousel-img.active {
+  display: block;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px 14px;
+  font-size: 1.2rem;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.carousel-btn:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-prev {
+  left: 8px;
+}
+
+.carousel-next {
+  right: 8px;
+}
+
 footer {
   margin-top: 50px;
   padding-top: 20px;
