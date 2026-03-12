@@ -1,0 +1,146 @@
+/* ============================================
+   Simple Personal Website Styles
+   Each rule targets elements and sets a few
+   properties. Easy to change and understand.
+   ============================================ */
+
+/* Base: body gets a nice font and spacing */
+body {
+  font-family: Georgia, serif;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fafafa;
+  color: #222;
+}
+
+/* Navigation at the top */
+nav {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+nav a {
+  margin-right: 20px;
+  color: #333;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Headings */
+h1 {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+h2 {
+  font-size: 1.3rem;
+  color: #444;
+  margin-top: 30px;
+}
+
+/* Sections have space between them */
+section {
+  margin-bottom: 40px;
+}
+
+/* Paragraphs are easy to read */
+p {
+  margin: 10px 0;
+}
+
+/* Images: not too big, with a little space */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 15px 0;
+  border-radius: 8px;
+}
+
+img.small-img {
+  width: 120px;
+}
+
+/* Lists look clean */
+ul {
+  margin: 10px 0;
+  padding-left: 25px;
+}
+
+li {
+  margin: 8px 0;
+}
+
+/* Links */
+a {
+  color: #2563eb;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Form styling: simple and clear */
+form {
+  margin-top: 15px;
+}
+
+label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  max-width: 400px;
+  padding: 8px;
+  margin-top: 4px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+/* Message shown after form submit (used by JavaScript) */
+#form-message {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #166534;
+}
+
+/* Footer at the bottom */
+footer {
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
+  font-size: 0.9rem;
+  color: #666;
+}
